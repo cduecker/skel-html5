@@ -8,7 +8,7 @@ var dev_compiler = webpack(_.extend({},webpackConfig,{
 	output: {
 		path: __dirname + "build/", //it is important to begin relative paths with the __dirname builtin
 		filename: "index.js",
-		sourceMapFilename: "[file].source.map" //the [file] refernece pulls the output filename
+		sourceMapFilename: "[file].source.map" //the [file] reference pulls the output filename
 	},
 	devtool: "#source-map" //the # sign controls the source map pragma prefix. # is more compatible than the default @
 }));
