@@ -26,7 +26,7 @@ module.exports = {
 		//rewrite module internal references looking for the source regex to the replace target
 		new webpack.ContextReplacementPlugin(/canjs[\/\\]amd/, /^$/),
 
-		//these items will be available in all modules w/o having to explicitly require them
+		//these items will be available in all modules that use them internally w/o having to require them explicitly
 		new webpack.ProvidePlugin({
 			"_":"lodash",
 			$: "jquery",
