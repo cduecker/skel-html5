@@ -2,6 +2,7 @@ var _ = require("lodash");
 var webpack = require("webpack");
 var webpackConfig = require("./webpack.config.js");
 var webpackDevMiddleware = require("webpack-dev-middleware");
+var mock = require('./mock');
 
 var dev_compiler = webpack(_.extend({},webpackConfig,{
 	output: {
@@ -100,6 +101,7 @@ module.exports = function (grunt) {
 					// ess re-implementation of the default options
 					middleware: function (connect, options, middlewares) {
 						middlewares.push(devServerMiddleware);
+						middlewares.push(mock);
 						return middlewares;
 					},
 					hostname: "localhost",
