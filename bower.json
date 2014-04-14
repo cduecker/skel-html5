@@ -1,0 +1,25 @@
+{
+  "name": "skel-html5",
+  "version": "0.1.0",
+  "homepage": "https://github.com/shcarrico/skel-html5",
+  "authors": [
+    "Stan Carrico <shcarrico@gmail.com>"
+  ],
+  "description": "HTML5 Milwaukee Skeleton app",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "canjs": "~2.0.7",
+    "lodash": "~2.4.1",
+    "nvd3": "~1.1.15-beta"
+  }
+}
